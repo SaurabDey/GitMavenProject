@@ -24,13 +24,17 @@ public class SeleniumClass {
 	}
 	
 	@Test
-	public void login()
+	public void login() throws InterruptedException
 	{
 		driver.findElement(By.id("user_login")).sendKeys("admin");
 		
 		driver.findElement(By.id("user_pass")).sendKeys("demo123");
 		
 		driver.findElement(By.id("wp-submit")).click();
+		
+		ScreenOption screen=new ScreenOption(driver);
+		screen.clickOnScreen();
+		Thread.sleep(5000);
 	}
 	
 	@AfterTest
