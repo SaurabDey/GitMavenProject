@@ -11,4 +11,10 @@
       <class name="com.org.GitMavenProject.Automationtest"/>
     </classes>
   </test> <!-- Test -->
+  
+  <test name="Test3">
+    <classes>
+      <class name="com.org.GitMavenProject.SuwarnaDemo"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
